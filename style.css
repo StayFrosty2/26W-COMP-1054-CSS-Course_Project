@@ -1,7 +1,71 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap'); */
+
+/* Color Palette:
+
+--linen: #f3e9dcff;
+--golden-chestnut: #c08552ff;
+--espresso: #5e3023ff;
+--toffee-brown: #895737ff;
+--desert-sand: #dab49dff;
+
+Palette gotten from here:
+https://coolors.co/f3e9dc-c08552-5e3023-895737-dab49d
+*/
+
+
 /* Box sizing reset */
 html {
     box-sizing: border-box;
+    font-size: 110%;
+    line-height: 1.4;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    background-color: #c08552ff;
+}
+
+nav {
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0 1%;
+    border: 3px solid #895737ff;
+    background-color: #5e3023ff;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #f3e9dcff;
+}
+a:visited {
+    text-decoration: none;
+    color: #f3e9dcff;
+}
+a:visited {
+    text-decoration: none;
+    color: #f3e9dcff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+}
+a.link-github {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 20%;
 }
