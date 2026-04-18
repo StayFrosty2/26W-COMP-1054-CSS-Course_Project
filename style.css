@@ -27,19 +27,23 @@ html {
 }
 
 a.skip-link {
-    margin: 0 auto;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 header {
     background-color: #5e3023ff;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     border: 3px solid #895737ff;
     color: #dab49dff;
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
-    font-size: 4.8rem;
-    letter-spacing: 2rem;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    font-family: "Rye", "Sekuya", serif;
+    text-transform: uppercase;
 }
 
 body {
@@ -48,6 +52,9 @@ body {
 
 nav {
     text-align: center;
+    margin-top: 2rem;
+    border: 10px solid black;
+    padding: 0;
 }
 nav ul li{
     display: inline;
@@ -67,6 +74,12 @@ a:visited {
 a:hover {
     text-decoration: underline;
     color: red;
+}
+
+section h2 {
+    font-family: "Rye", "Sekuya", serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
 }
 
 section:nth-of-type(2) ul::before {
@@ -90,6 +103,7 @@ section:nth-of-type(2) li {
     color: black;
     font-size: 1.8rem;
     font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
     padding: 0.2rem;
     margin: 1%;
 }
