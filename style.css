@@ -18,6 +18,8 @@ https://coolors.co/f3e9dc-c08552-5e3023-895737-dab49d
 /* Box sizing reset */
 html {
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
     font-size: 110%;
     line-height: 1.4;
     filter: sepia(40%);
@@ -34,16 +36,16 @@ a.skip-link {
 
 header {
     background-color: #5e3023ff;
-    padding-bottom: 2em;
     border: 3px solid #895737ff;
     color: #dab49dff;
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
-    font-size: 8rem;
+    font-size: 8.4rem;
     letter-spacing: 1rem;
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
+    filter: drop-shadow(10px 4px 1px black);
 }
 
 body {
@@ -52,16 +54,16 @@ body {
 
 nav {
     text-align: center;
-    margin-top: 2rem;
-    border: 10px solid black;
     padding: 0;
 }
 nav ul li{
     display: inline;
-    margin: 0 1%;
-    border: 3px solid #895737ff;
+    margin: 0 1rem;
+    border-left: 3px solid #895737ff;
+    border-right: 3px solid #895737ff;
+    border-bottom: 3px solid #895737ff;
     background-color: #5e3023ff;
-    padding: 10px;
+    padding: 21.5px 1rem 10px 1rem;
 }
 a {
     text-decoration: none;
@@ -73,19 +75,26 @@ a:visited {
 }
 a:hover {
     text-decoration: underline;
-    color: red;
+    color: lightcoral;
 }
 
+section {
+    border: 3px solid #5e3023ff;
+    background-color: #895737ff;
+}
 section h2 {
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+}
+section p {
+    margin: 0 1rem 1rem 1rem;
 }
 
 section:nth-of-type(2) ul::before {
     content: "EXAMPLES";
     color: black;
-    font-size: 6rem;
+    font-size: 5.5rem;
     text-decoration: underline;
     font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -110,7 +119,7 @@ section:nth-of-type(2) li {
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     text-align: center;
