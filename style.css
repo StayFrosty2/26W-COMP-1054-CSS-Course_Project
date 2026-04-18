@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Sekuya&display=swap');
 
 /* Color Palette:
 
@@ -19,10 +20,14 @@ html {
     box-sizing: border-box;
     font-size: 110%;
     line-height: 1.4;
-    filter: sepia(30%);
+    filter: sepia(40%);
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+a.skip-link {
+    margin: 0 auto;
 }
 
 header {
@@ -59,9 +64,34 @@ a:visited {
     text-decoration: none;
     color: #f3e9dcff;
 }
-a:visited {
-    text-decoration: none;
-    color: #f3e9dcff;
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+section:nth-of-type(2) ul::before {
+    content: "WANTED";
+    color: black;
+    font-size: 6rem;
+    text-decoration: underline;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+section:nth-of-type(2) ul {
+    list-style-type: none;
+    border: 3px solid goldenrod;
+    background-image: url("parchment paper texture - Copy.jpg");
+    background-size: cover;
+    background-color: #f3e9dcff;
+    padding: 1.2rem;
+}
+section:nth-of-type(2) li {
+    display: block;
+    color: black;
+    font-size: 1.8rem;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    padding: 0.2rem;
+    margin: 1%;
 }
 
 .container {
