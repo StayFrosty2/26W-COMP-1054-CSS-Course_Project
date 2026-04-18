@@ -83,7 +83,7 @@ section h2 {
 }
 
 section:nth-of-type(2) ul::before {
-    content: "WANTED";
+    content: "EXAMPLES";
     color: black;
     font-size: 6rem;
     text-decoration: underline;
