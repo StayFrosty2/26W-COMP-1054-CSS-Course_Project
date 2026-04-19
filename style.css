@@ -28,6 +28,14 @@ html {
     box-sizing: inherit;
 }
 
+.container {
+    width: 84%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 a.skip-link {
     position: absolute;
     top: 1rem;
@@ -86,6 +94,7 @@ section h2 {
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
     font-size: 3.2rem;
+    filter: drop-shadow(10px 4px 1px black);
 }
 section p {
     margin: 0 1rem 1rem 1rem;
@@ -105,6 +114,8 @@ section:nth-of-type(2) ul {
     background-image: url("parchment paper texture - Copy.jpg");
     background-size: cover;
     background-color: #f3e9dcff;
+    width: 70%;
+    margin: 0 auto;
     padding: 1.2rem;
 }
 section:nth-of-type(2) li {
@@ -115,14 +126,6 @@ section:nth-of-type(2) li {
     text-transform: uppercase;
     padding: 0.2rem;
     margin: 1%;
-}
-
-.container {
-    width: 80%;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 
@@ -136,4 +139,42 @@ a.link-github {
 svg {
     height: 50px;
     width: 50px;
+}
+
+aside.profile {
+    position: fixed;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    background-color: #f3e9dcff;
+    border: 3px solid #5e3023ff;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+aside.profile h4 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+aside.profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+aside.profile ul a {
+    color: #895737ff;
+    font-size: 0.7rem;
+}
+aside.profile ul a:visited {
+    color: #895737ff;
+}
+aside.profile li {
+    font-size: 0.7rem;
+}
+aside.profile a {
+    margin-top: 6px;
+    color: #5e3023ff;
+    font-size: 0.8rem;
 }
