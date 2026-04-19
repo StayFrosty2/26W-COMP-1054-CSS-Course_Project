@@ -178,3 +178,9 @@ aside.profile a {
     color: #5e3023ff;
     font-size: 0.8rem;
 }
+
+footer {
+    background-color: #5e3023ff;
+    border: 3px solid #895737ff;
+    color: #dab49dff;
+}
