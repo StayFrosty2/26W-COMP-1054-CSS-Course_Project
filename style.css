@@ -115,7 +115,7 @@ section:nth-of-type(2) ul {
     background-size: cover;
     background-color: #f3e9dcff;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
     padding: 1.2rem;
 }
 section:nth-of-type(2) li {
@@ -143,7 +143,7 @@ svg {
 
 aside.profile {
     position: fixed;
-    bottom: 0.2rem;
+    top: 50%;
     right: 0.2rem;
     background-color: #f3e9dcff;
     border: 3px solid #5e3023ff;
@@ -179,8 +179,43 @@ aside.profile a {
     font-size: 0.8rem;
 }
 
-footer {
+
+footer#files div.container {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
     color: #dab49dff;
+}
+.link-downloadcss, .link-downloadhtml, .link-codepen {
+    border-top: 3px solid #895737ff;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+
+#styles div.container {
+    border: 3px solid #895737ff;
+    background-color: #5e3023ff;
+}
+#styles h2 {
+    color: #dab49dff;
+}
+.features {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+.features li {
+    display: inline-block;
+    background-color: #895737ff;
+    border: 3px solid #dab49dff;
+    padding: 1rem;
+    margin: 10px 5%;
+}
+.features li a {
+    font-size: 1.8rem;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.features li span {
+    display: block;
 }
