@@ -48,11 +48,14 @@ a.skip-link {
     left: 1rem;
 }
 
-/* Sets the font family for *most* of the page, as well as applies a nice looking box to the header */
+/* Sets the header and header h2 with a nice box and a font */
 header {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
     color: #dab49dff;
+    font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header h2 {
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
