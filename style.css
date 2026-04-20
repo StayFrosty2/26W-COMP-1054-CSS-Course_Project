@@ -55,8 +55,10 @@ header {
     color: #dab49dff;
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/* Makes the header h2 slightly smaller since it's slightly too wide on mobile */
 header h2 {
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8rem;
 }
 
 /* Styling for the H1 */
