@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* @import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap'); */
+
+/* Imports 2 fonts from Google Fonts, Rye and Sekuya, to sell the "western" asthetic */
 @import url('https://fonts.googleapis.com/css2?family=Rye&family=Sekuya&display=swap');
 
 /* Color Palette:
@@ -15,7 +16,7 @@ https://coolors.co/f3e9dc-c08552-5e3023-895737-dab49d
 */
 
 
-/* Box sizing reset */
+/* Box sizing reset, basics for the site. Also applies the "sepia" filter to make the page look more like a western */
 html {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -31,6 +32,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Sets the width of the page, as well as applies a flexbox to the whole page */
 .container {
     width: 95%;
     margin: 2rem auto;
@@ -39,12 +41,14 @@ html {
     text-align: center;
 }
 
+/* Adjusts the skip link to be within the header box */
 a.skip-link {
     position: absolute;
     top: 1rem;
     left: 1rem;
 }
 
+/* Sets the font family for *most* of the page, as well as applies a nice looking box to the header */
 header {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
@@ -52,6 +56,7 @@ header {
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* Styling for the H1 */
 h1 {
     font-size: 3.6rem;
     letter-spacing: 1rem;
@@ -59,16 +64,35 @@ h1 {
     text-transform: uppercase;
     filter: drop-shadow(10px 4px 1px black);
 }
-h2, h3 {
+
+/* Styling for the H2 and H3 generally */
+h2,
+h3 {
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
     font-size: 2.1rem;
     filter: drop-shadow(10px 4px 1px black);
 }
+
+/* At both sections of the page (header and footer) styles the github star to be above the link, as well as be smaller then it usually would be */
+a.link-github {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+/* Puts a margin around all the paragraphs to make them more readable */
 p {
     margin: 0 1rem 1rem 1rem;
 }
 
+/* Gives the whole page a background color */
 body {
     background-color: #c08552ff;
 }
@@ -78,16 +102,20 @@ ul {
     list-style-type: none;
 }
 
-section.container {
+/* Moves the sections and footers into the center */
+section.container,
+footer,
+aside {
     margin: 0.5rem auto;
 }
 
+/* Generally gives the sections a nice looking backdrop */
 section {
     border: 3px solid #5e3023ff;
     background-color: #895737ff;
 }
 
-
+/* Navigation styling */
 nav {
     text-align: center;
     padding: 0;
@@ -105,6 +133,7 @@ nav ul li {
     background-color: #5e3023ff;
 }
 
+/* Styles the vast majority of links around the site, just changing colors */
 a {
     color: white;
 }
@@ -117,8 +146,7 @@ a:hover {
     color: lightcoral;
 }
 
-
-
+/* Specifically styles one of the sections to include a "WANTED" poster */
 section:nth-of-type(2) ul::before {
     content: "EXAMPLES";
     color: black;
@@ -146,26 +174,17 @@ section:nth-of-type(2) ul li {
     margin: 1%;
 }
 
+/* Styles the ordered list near the bottom of the page */
 ol {
     padding: 0;
 }
+
 ol li {
     margin: 30px;
     text-align: left;
 }
 
-a.link-github {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-svg {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-}
-
+/* Styles the aside that describes the currently selected style with colors, positioning, and fonts */
 aside.profile {
     background-color: #f3e9dcff;
     border: 3px solid #5e3023ff;
@@ -182,30 +201,31 @@ aside.profile h4 {
     font-size: 1.2rem;
 }
 
-aside.profile ul {
-    padding: 0;
-    margin: 0;
-}
-
-aside.profile ul a {
-    color: #895737ff;
-    font-size: 1rem;
-}
-aside.profile ul a:visited {
-    color: #895737ff;
-}
-
-aside.profile li {
-    font-size: 1rem;
-}
-
 aside.profile a {
     margin-top: 6px;
     color: #5e3023ff;
     font-size: 1rem;
 }
 
+aside.profile ul {
+    padding: 0;
+    margin: 0;
+}
 
+aside.profile li {
+    font-size: 1rem;
+}
+
+aside.profile li a {
+    color: #895737ff;
+    font-size: 1rem;
+}
+
+aside.profile li a:visited {
+    color: #895737ff;
+}
+
+/* Styles the footer which provides the user with the files */
 footer#files div.container {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
@@ -220,6 +240,7 @@ footer#files div.container {
     font-size: 1.6rem;
 }
 
+/* Styles the "Featured Styles" section */
 #styles div.container {
     border: 3px solid #895737ff;
     background-color: #5e3023ff;
@@ -229,6 +250,7 @@ footer#files div.container {
     color: #dab49dff;
 }
 
+/* Spreads the styles themselves out to look more visually interesting */
 .features {
     margin: 0 auto;
     padding: 0;
@@ -253,6 +275,7 @@ footer#files div.container {
     display: block;
 }
 
+/* Styles the last page footer */
 .page-footer .container {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
@@ -263,7 +286,10 @@ footer#files div.container {
     padding: 0;
 }
 
-@media screen and ((min-width: 1200px) or (orientation: landscape)) {
+/* Changes some of the styling if the user is on a decently sized computer */
+@media screen and ((min-width: 1200px)) {
+
+    /* Compresses the containers */
     .container {
         width: 84%;
         margin: 2rem auto;
@@ -272,6 +298,7 @@ footer#files div.container {
         text-align: center;
     }
 
+    /* Makes the H1 bigger */
     h1 {
         font-size: 8.4rem;
         letter-spacing: 1rem;
@@ -280,6 +307,7 @@ footer#files div.container {
         filter: drop-shadow(10px 4px 1px black);
     }
 
+    /* Styles the UL to look more like a hanging sign rather then a boring box */
     nav ul li {
         display: inline;
         margin: 0 1rem;
@@ -291,6 +319,7 @@ footer#files div.container {
         padding: 1.75rem 1rem 10px 1rem;
     }
 
+    /* Makes the H2's bigger */
     section h2 {
         font-family: "Rye", "Sekuya", serif;
         text-transform: uppercase;
@@ -298,6 +327,7 @@ footer#files div.container {
         filter: drop-shadow(10px 4px 1px black);
     }
 
+    /* Makes the "EXAMPLES" text bigger */
     section:nth-of-type(2) ul::before {
         content: "EXAMPLES";
         color: black;
@@ -307,6 +337,7 @@ footer#files div.container {
         font-weight: bold;
     }
 
+    /* Makes the list of usable features bigger */
     section:nth-of-type(2) ul {
         border: 3px solid goldenrod;
         background-image: url("parchment paper texture - Copy.jpg");
@@ -317,6 +348,7 @@ footer#files div.container {
         padding: 1.2rem;
     }
 
+    /* Sticks the aside on the right side of the screen rather then placing it at the bottom of the page */
     aside.profile {
         position: fixed;
         top: 40%;
@@ -328,6 +360,7 @@ footer#files div.container {
         margin: 0;
     }
 
+    /* Makes the text for the aside smaller to fit in the smaller box */
     aside.profile h4 {
         padding: 0;
         margin: 0 0 10px 0;
@@ -336,17 +369,11 @@ footer#files div.container {
         font-size: 0.8rem;
     }
 
-    a.link-github {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 20%;
-    }
-
     aside.profile ul a {
         color: #895737ff;
         font-size: 0.7rem;
     }
+
     aside.profile li {
         font-size: 0.7rem;
     }
