@@ -19,17 +19,20 @@ https://coolors.co/f3e9dc-c08552-5e3023-895737-dab49d
 html {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: #f3e9dcff;
     font-size: 110%;
     line-height: 1.4;
     filter: sepia(40%);
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 .container {
-    width: 84%;
+    width: 95%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
@@ -48,84 +51,26 @@ header {
     color: #dab49dff;
     font-family: "Sekuya", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 h1 {
-    font-size: 8.4rem;
+    font-size: 3.6rem;
     letter-spacing: 1rem;
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
     filter: drop-shadow(10px 4px 1px black);
 }
-
-body {
-    background-color: #c08552ff;
-}
-
-nav {
-    text-align: center;
-    padding: 0;
-}
-nav ul li{
-    display: inline;
-    margin: 0 1rem;
-    border-left: 3px solid #895737ff;
-    border-right: 3px solid #895737ff;
-    border-bottom: 3px solid #895737ff;
-    background-color: #5e3023ff;
-    padding: 21.5px 1rem 10px 1rem;
-}
-a {
-    text-decoration: none;
-    color: #f3e9dcff;
-}
-a:visited {
-    text-decoration: none;
-    color: #f3e9dcff;
-}
-a:hover {
-    text-decoration: underline;
-    color: lightcoral;
-}
-
-section {
-    border: 3px solid #5e3023ff;
-    background-color: #895737ff;
-}
-section h2 {
+h2, h3 {
     font-family: "Rye", "Sekuya", serif;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 2.1rem;
     filter: drop-shadow(10px 4px 1px black);
 }
-section p {
+p {
     margin: 0 1rem 1rem 1rem;
 }
 
-section:nth-of-type(2) ul::before {
-    content: "EXAMPLES";
-    color: black;
-    font-size: 5.5rem;
-    text-decoration: underline;
-    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-section:nth-of-type(2) ul {
-    list-style-type: none;
-    border: 3px solid goldenrod;
-    background-image: url("parchment paper texture - Copy.jpg");
-    background-size: cover;
-    background-color: #f3e9dcff;
-    width: 70%;
-    margin: 0 auto 1rem auto;
-    padding: 1.2rem;
-}
-section:nth-of-type(2) li {
-    display: block;
-    color: black;
-    font-size: 1.8rem;
-    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    padding: 0.2rem;
-    margin: 1%;
+body {
+    background-color: #c08552ff;
 }
 
 /* Removes the list marker from all unordered lists */
@@ -133,12 +78,88 @@ ul {
     list-style-type: none;
 }
 
+section.container {
+    margin: 0.5rem auto;
+}
+
+section {
+    border: 3px solid #5e3023ff;
+    background-color: #895737ff;
+}
+
+
+nav {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul {
+    padding: 0.5rem;
+}
+
+nav ul li {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #895737ff;
+    background-color: #5e3023ff;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+
+
+section:nth-of-type(2) ul::before {
+    content: "EXAMPLES";
+    color: black;
+    font-size: 2.1rem;
+    text-decoration: underline;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+section:nth-of-type(2) ul {
+    background-image: url("parchment paper texture - Copy.jpg");
+    background-size: cover;
+    background-color: #f3e9dcff;
+    margin: 0 auto 1rem auto;
+    padding: 1.2rem;
+}
+
+section:nth-of-type(2) ul li {
+    display: block;
+    color: black;
+    font-size: 1rem;
+    font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    margin: 1%;
+}
+
+ol {
+    padding: 0;
+}
+ol li {
+    margin: 30px;
+    text-align: left;
+}
+
 a.link-github {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 20%;
 }
+
 svg {
     height: 50px;
     width: 50px;
@@ -146,40 +167,42 @@ svg {
 }
 
 aside.profile {
-    position: fixed;
-    top: 40%;
-    right: 0.2rem;
     background-color: #f3e9dcff;
     border: 3px solid #5e3023ff;
     color: black;
     padding: 0;
     margin: 0;
 }
+
 aside.profile h4 {
     padding: 0;
     margin: 0 0 10px 0;
     font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
+
 aside.profile ul {
     padding: 0;
     margin: 0;
 }
+
 aside.profile ul a {
     color: #895737ff;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 aside.profile ul a:visited {
     color: #895737ff;
 }
+
 aside.profile li {
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
+
 aside.profile a {
     margin-top: 6px;
     color: #5e3023ff;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
@@ -188,7 +211,10 @@ footer#files div.container {
     border: 3px solid #895737ff;
     color: #dab49dff;
 }
-.link-downloadcss, .link-downloadhtml, .link-codepen {
+
+.link-downloadcss,
+.link-downloadhtml,
+.link-codepen {
     border-top: 3px solid #895737ff;
     padding: 0.5rem;
     font-size: 1.6rem;
@@ -198,14 +224,17 @@ footer#files div.container {
     border: 3px solid #895737ff;
     background-color: #5e3023ff;
 }
+
 #styles h2 {
     color: #dab49dff;
 }
+
 .features {
     margin: 0 auto;
     padding: 0;
     margin-bottom: 0.5rem;
 }
+
 .features li {
     display: inline-block;
     background-color: #895737ff;
@@ -213,11 +242,13 @@ footer#files div.container {
     padding: 1rem;
     margin: 10px 5%;
 }
+
 .features li a {
     font-size: 1.8rem;
     font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
+
 .features li span {
     display: block;
 }
@@ -225,4 +256,98 @@ footer#files div.container {
 .page-footer .container {
     background-color: #5e3023ff;
     border: 3px solid #895737ff;
+    padding: 1rem;
+}
+
+.page-footer .container ul {
+    padding: 0;
+}
+
+@media screen and ((min-width: 1200px) or (orientation: landscape)) {
+    .container {
+        width: 84%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 8.4rem;
+        letter-spacing: 1rem;
+        font-family: "Rye", "Sekuya", serif;
+        text-transform: uppercase;
+        filter: drop-shadow(10px 4px 1px black);
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+        border-top: none;
+        border-left: 3px solid #895737ff;
+        border-right: 3px solid #895737ff;
+        border-bottom: 3px solid #895737ff;
+        background-color: #5e3023ff;
+        padding: 1.75rem 1rem 10px 1rem;
+    }
+
+    section h2 {
+        font-family: "Rye", "Sekuya", serif;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        filter: drop-shadow(10px 4px 1px black);
+    }
+
+    section:nth-of-type(2) ul::before {
+        content: "EXAMPLES";
+        color: black;
+        font-size: 5.5rem;
+        text-decoration: underline;
+        font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    section:nth-of-type(2) ul {
+        border: 3px solid goldenrod;
+        background-image: url("parchment paper texture - Copy.jpg");
+        background-size: cover;
+        background-color: #f3e9dcff;
+        width: 70%;
+        margin: 0 auto 1rem auto;
+        padding: 1.2rem;
+    }
+
+    aside.profile {
+        position: fixed;
+        top: 40%;
+        right: 0.2rem;
+        background-color: #f3e9dcff;
+        border: 3px solid #5e3023ff;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside.profile h4 {
+        padding: 0;
+        margin: 0 0 10px 0;
+        font-family: "Rye", Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+
+    a.link-github {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    aside.profile ul a {
+        color: #895737ff;
+        font-size: 0.7rem;
+    }
+    aside.profile li {
+        font-size: 0.7rem;
+    }
 }
